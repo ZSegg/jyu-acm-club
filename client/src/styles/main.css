@@ -1,0 +1,9 @@
+/* 1. 初始化 Tailwind */
+@import "tailwindcss";
+
+/* 2. 按顺序导入自定义样式 */
+@import "./variables.css";
+@import "./base.css";
+@import "./utilities.css";
+@import "./overrides.css";
+@import "./components/_buttons.css";
