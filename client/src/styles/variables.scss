@@ -1,0 +1,159 @@
+// variables.scss
+// 颜色变量
+$primary-color: rgba(0, 123, 255, 1); // blue-500
+$secondary-color: #a855f7; // purple-500
+$danger-color: #ef4444; // red-500
+
+// 中性色
+$white: #ffffff; // 纯白色
+$white-smoke: #f5f5f5;
+$white-alpha: rgba(255, 255, 255, 0.5);
+
+$black: #000000; // 纯黑色
+$gray: rgba(102, 102, 102, 1);
+$gray-100: #f3f4f6;
+$gray-800: #1f2937;
+
+// 语义色
+$success-color: #22c55e; // green-500
+$warning-color: #eab308; // yellow-500
+
+// 字体
+$font-sans: "Inter", ui-sans-serif, system-ui;
+$font-mono: "Fira Code", ui-monospace, monospace;
+
+// 字重变量（对应 font-weight 数值）
+$font-weight-light: 300; // 轻量
+$font-weight-regular: 400; // 常规（默认）
+$font-weight-medium: 500; // 中等
+$font-weight-semibold: 600; // 半粗体
+$font-weight-bold: 700; // 粗体
+$font-weight-extrabold: 800; // 特粗
+$font-weight-black: 900; // 黑体
+
+// 字体大小（使用 rem 单位，适合响应式布局）
+// 字体大小变量（1rem = 16px 基准换算）
+$font-size-xs: 0.75rem; // 12px
+$font-size-sm: 0.875rem; // 14px
+$font-size-base: 1rem; // 16px
+$font-size-lg: 1.125rem; // 18px
+$font-size-xl: 1.25rem; // 20px
+$font-size-2xl: 1.5rem; // 24px
+$font-size-3xl: 1.875rem; // 30px
+$font-size-4xl: 2.25rem; // 36px
+$font-size-5xl: 3rem; // 48px
+$font-size-6xl: 4.5rem; // 72px
+$font-size-huge: 6rem; // 96px
+$font-size-gigantic: 8rem; // 128px
+$font-size-enormous: 10rem; // 160px
+
+// 圆角（使用 rem 单位，适合响应式布局）
+$radius-sm: 0.25rem; // 4px
+$radius-md: 0.5rem; // 8px
+$radius-lg: 1rem; // 16px
+$radius-xl: 1.5rem; // 24px
+$radius-2xl: 2rem; // 32px
+
+$radius-full: 9999px;
+
+// 响应式圆角
+$radius-md-mobile: 0.25rem; // 4px
+$radius-md-desktop: 1rem; // 16px
+
+// 常用间距（使用 rem 单位，适合响应式布局）
+$space-xs: 0.25rem; // 4px
+$space-sm: 0.5rem; // 8px
+$space-md: 1rem; // 16px
+$space-lg: 1.5rem; // 24px
+$space-xl: 2rem; // 32px
+$space-2xl: 3rem; // 48px
+$space-3xl: 4rem; // 64px
+$space-4xl: 4.5rem; // 72px
+
+// 高度变量
+$height-xs: 1rem; // 16px
+$height-sm: 1.5rem; // 24px
+$height-md: 2rem; // 32px
+$height-lg: 3rem; // 48px
+$height-xl: 4rem; // 64px
+$height-2xl: 5rem; // 80px
+$height-3xl: 6.5rem; // 104px
+$height-4xl: 7rem; // 112px
+$height-5xl: 8rem; // 128px
+$height-container-xs: 30rem; // 480px
+$height-container-sm: 33.5rem; // 536px
+$height-container: 40rem; //  640px
+$height-container-lg: 43rem; // 720px
+$height-container-xl: 46rem; // 768px
+$height-container-2xl: 54rem; // 864px
+$height-full: 100%; // 100%
+$height-screen-sm: 85vh;
+$height-screen: 100vh; // 100vh
+
+// 宽度变量
+$width-xs: 1rem; // 16px
+$width-sm: 1.5rem; // 24px
+$width-md: 2rem; // 32px
+$width-lg: 3rem; // 48px
+$width-xl: 4rem; // 64px
+$width-full: 100%; // 100%
+$width-container-sm: 30rem; // 480px
+$width-container-md: 36rem; // 576px
+$width-container: 40rem; // 640px
+$width-container-lg: 42rem; // 672px
+$width-container-xl: 48rem; // 768px
+$width-container-2xl: 54rem; // 864px
+$width-screen: 100vw;
+$width-screen-sm: 80vw;
+
+// padding变量
+$padding-xs: 0.25rem; // 4px
+$padding-sm: 0.5rem; // 8px
+$padding-base: 0.75rem; // 12px
+$padding-md: 1rem; // 16px
+$padding-lg: 1.5rem; // 24px
+$padding-xl: 2rem; // 32px
+$padding-2xl: 3rem; // 48px
+$padding-3xl: 4rem; // 64px
+$padding-4xl: 5rem; // 80px
+$padding-5xl: 6rem; // 96px
+$padding-6xl: 7rem; // 112px
+
+// margin变量
+$margin-xs: 0.25rem; // 4px
+$margin-sm: 0.5rem; // 8px
+$margin-md: 1rem; // 16px
+$margin-lg: 1.5rem; // 24px
+$margin-xl: 2rem; // 32px
+$margin-2xl: 3rem; // 48px
+$margin-3xl: 4rem; // 64px
+$margin-4xl: 5rem; // 80px
+
+// border宽度变量
+$border-width-xs: 0.5px;
+$border-width-sm: 1px;
+$border-width-md: 2px;
+$border-width-lg: 3px;
+$border-width-xl: 4px;
+
+// 默认样式
+:root {
+  font-family: $font-sans;
+}
+
+// 响应式圆角样式
+.my-box {
+  border-radius: $radius-md;
+}
+
+@media (max-width: 640px) {
+  .my-box {
+    border-radius: $radius-md-mobile;
+  }
+}
+
+@media (min-width: 1024px) {
+  .my-box {
+    border-radius: $radius-md-desktop;
+  }
+}

@@ -1,0 +1,13 @@
+@use "../variables.scss" as *; // 必须导入变量
+
+.btn {
+  border: 1px solid black;
+  padding: $padding-base $padding-lg;
+  border-radius: $radius-2xl;
+}
+
+.btn--primary {
+  @extend .btn;
+  color: $white-smoke;
+  background-color: $primary-color;
+}

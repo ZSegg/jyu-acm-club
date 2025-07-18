@@ -1,0 +1,19 @@
+/* 该样式文件用来定义重置样式和基础的排版(字体等) */
+@use "./variables.scss" as *; // 必须导入变量
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: $font-size-base;
+  font-family: $font-sans;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: $white;
+}

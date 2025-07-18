@@ -1,0 +1,6 @@
+// src/styles/main.scss
+@forward "./variables.scss"; // 导出变量
+@forward "./base.scss";
+@forward "./utilities.scss";
+@forward "./overrides.scss";
+@forward "./components/_button.scss"; // 导出按钮样式
