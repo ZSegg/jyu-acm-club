@@ -1,6 +1,7 @@
 @use "../variables.scss" as *; // 必须导入变量
 
 .btn {
+  width: fit-content;
   border: 1px solid black;
   padding: $padding-base $padding-lg;
   border-radius: $radius-2xl;
