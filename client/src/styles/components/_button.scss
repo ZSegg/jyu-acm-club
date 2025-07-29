@@ -1,0 +1,21 @@
+@use "../variables.scss" as *; // 必须导入变量
+
+.btn {
+  width: fit-content;
+  border: 1px solid black;
+  padding: $padding-sm $padding-md;
+  border-radius: $radius-2xl;
+  font-size: $font-size-sm;
+}
+
+.btn--primary {
+  @extend .btn;
+  color: $white-smoke;
+  background-color: $primary-color;
+}
+
+.btn--circle {
+  padding: $padding-sm;
+  border-radius: $radius-full;
+  border: 1px solid black;
+}

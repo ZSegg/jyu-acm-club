@@ -1,0 +1,62 @@
+/* 该样式文件用来定义重置样式和基础的排版(字体等) */
+@use "./variables.scss" as *; // 必须导入变量
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 默认基准（移动端优先，假设设计稿宽度为 375px） */
+html {
+  font-size: 16px; /* 默认值，可省略 */
+}
+
+/* 小屏幕（如手机） */
+@media screen and (max-width: 767px) {
+  html {
+    font-size: calc(
+      16px + 2 * (100vw - 375px) / 39
+    ); /* 375px时16px，414px时18px */
+  }
+}
+
+/* 中等屏幕（如平板） */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  html {
+    font-size: calc(
+      18px + 2 * (100vw - 768px) / 256
+    ); /* 768px时18px，1024px时20px */
+  }
+}
+
+/* 大屏幕（如桌面） */
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 20px; /* 固定值或继续动态调整 */
+  }
+}
+
+body {
+  font-size: $font-size-base;
+  font-family: $font-sans;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: $white;
+}
+
+a {
+  text-decoration: none;
+  --a-font-color: $black;
+  color: var(--a-font-color);
+  &:hover,
+  &:link,
+  &:visited,
+  &:active {
+    color: var(--a-font-color);
+  }
+}
