@@ -1,6 +1,6 @@
 // variables.scss
 // 颜色变量
-$primary-color: rgba(0, 123, 255, 1); // blue-500
+$primary-color: #409eff;
 $secondary-color: #a855f7; // purple-500
 $danger-color: #ef4444; // red-500
 
@@ -100,6 +100,7 @@ $width-sm: 1.5rem; // 24px
 $width-md: 2rem; // 32px
 $width-lg: 3rem; // 48px
 $width-xl: 4rem; // 64px
+$width-2xl: 5rem; // 80px
 $width-full: 100%; // 100%
 $width-container-sm: 30rem; // 480px
 $width-container-md: 36rem; // 576px
@@ -140,24 +141,4 @@ $border-width-md: 2px;
 $border-width-lg: 3px;
 $border-width-xl: 4px;
 
-// 默认样式
-:root {
-  font-family: $font-sans;
-}
-
-// 响应式圆角样式
-.my-box {
-  border-radius: $radius-md;
-}
-
-@media (max-width: 640px) {
-  .my-box {
-    border-radius: $radius-md-mobile;
-  }
-}
-
-@media (min-width: 1024px) {
-  .my-box {
-    border-radius: $radius-md-desktop;
-  }
-}
+$transition-duration-base: 0.5s;

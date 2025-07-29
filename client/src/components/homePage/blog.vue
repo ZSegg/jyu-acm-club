@@ -63,7 +63,7 @@ let data = reactive([{
 
 function getImgUrl(name){
      const url = new URL(`../../assets/${name}`,import.meta.url);
-     console.log(url);
+    //  console.log(url);
      return url.href;
 }
 </script>

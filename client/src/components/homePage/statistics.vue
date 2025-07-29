@@ -10,9 +10,10 @@
   width: 100%;
   height: $height-container;
   padding: $padding-6xl $padding-3xl;
-  .homePage-statistics__content {
-    width: 100%;
-    height: 100%;
+  img {
+    width: 100%; /* 或指定具体宽度 */
+    height: auto; /* 保持比例 */
+    object-fit: contain; /* 确保完整显示图片 */
   }
 }
 </style>

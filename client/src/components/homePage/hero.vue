@@ -17,7 +17,7 @@
 <script setup lang="js"></script>
 <style scoped lang="scss">
 .homepage-hero {
-  left: 0px;
+  left: 0;
   top: $space-4xl;
   width: 100%;
   opacity: 1;
@@ -27,10 +27,11 @@
   align-items: center;
   padding: $padding-6xl $padding-4xl;
   box-sizing: border-box;
+  gap: $space-xl;
 }
 
 .homepage-hero__content {
-  width: 43%;
+  flex: 1;
   height: $height-container-xs;
   opacity: 1;
   display: flex;
@@ -64,10 +65,8 @@
 }
 
 .homepage-hero__placeholder {
-  width: 40%;
+  flex: 1;
   height: $height-container;
-  display: flex;
-  justify-content: center;
   img {
     max-width: 100%; // 防止图片超出容器宽度
     max-height: 100%; // 防止图片超出容器高度

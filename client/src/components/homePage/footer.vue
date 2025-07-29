@@ -9,12 +9,14 @@
         <div class="homePage-footer__info">
           <p>订阅我们，第一时间获取竞赛信息、技术分享与通知。</p>
           <div class="homePage-footer__action">
-            <input
-              class="homePage-footer__input"
-              type="text"
-              placeholder="填写你的邮箱"
-            />
-            <button class="homePage-footer__btn">订阅</button>
+            <div class="homePage-footer__input-wrapper">
+              <input
+                class="homePage-footer__input"
+                type="text"
+                placeholder="填写你的邮箱"
+              />
+              <button class="homePage-footer__btn">订阅</button>
+            </div>
             <p>订阅即表示你同意我们的《隐私政策》并同意接收 ACM 更新。</p>
           </div>
         </div>
@@ -133,15 +135,20 @@
       height: 80%;
       justify-content: space-between;
       margin: $space-md 0;
-      .homePage-footer__input {
-        width: 80%;
-        margin-right: 5%;
+      .homePage-footer__input-wrapper {
+        display: flex;
         height: 50%;
+        width: 100%;
+        gap: $space-sm;
+      }
+      .homePage-footer__input {
+        flex: 1;
+        height: 100%;
       }
       .homePage-footer__btn {
         @extend .btn;
-        width: 15%;
-        height: 50%;
+        width: fit-content;
+        height: 100%;
       }
     }
   }

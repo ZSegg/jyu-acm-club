@@ -61,6 +61,13 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      img {
+        width: $width-xl;
+        height: $height-xl;
+        object-fit: cover;
+        object-position: center;
+        margin-bottom: $space-sm;
+      }
       h3 {
         font-size: $font-size-4xl;
         margin-bottom: $margin-lg;
