@@ -84,7 +84,7 @@
           <div>
             <label for="email">邮箱：</label>
             <input
-              v-model="formData.password"
+              v-model="formData.email"
               id="email"
               type="email"
               placeholder="请输入你的邮箱"
