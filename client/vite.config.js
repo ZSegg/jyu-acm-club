@@ -23,6 +23,13 @@ export default defineConfig({
     },
   },
   server: {
-    cors: true,
+    // cors: true,
+    proxy: {
+      "/development": {
+        target: `https://jyuacm.icescoffee.com`,
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ""),
+      },
+    },
   },
 });

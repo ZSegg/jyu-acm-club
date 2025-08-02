@@ -45,7 +45,7 @@
           <div>
             <label for="username">账号：</label>
             <input
-              v-model="formData.usename"
+              v-model="formData.username"
               id="username"
               type="text"
               placeholder="请输入你的账号"
@@ -66,7 +66,7 @@
           <div>
             <label for="username">账号：</label>
             <input
-              v-model="formData.usename"
+              v-model="formData.username"
               id="username"
               type="text"
               placeholder="请输入你的账号"
@@ -130,7 +130,7 @@ const items = ref([
 const flag = ref(true);
 
 const formData = reactive({
-  usename:"",
+  username:"",
   password:"",
   email:"",
 })
@@ -156,20 +156,23 @@ watch(flag,(newValue,oldValue)=>{
 })
 
 const loginSubmit = async()=>{
-  if(!formData.usename || !formData.password){
+  // console.log("login: ",formData);
+  if(!formData.username || !formData.password){
     alert("请填写用户名或密码")
     return
   }
-  await authStore.login(formData.usename,formData.password);
+  await authStore.login(formData.username,formData.password);
   if(authStore.isLogin){
     dialogVisible.value = false
     alert("登录成功")
   }else{
     alert("登录失败")
   }
+  // console.log("login: ",authStore.isLogin, authStore.username, authStore.token, authStore.userId)
 }
 
 const registerSubmit = async ()=>{
+  // console.log("register: ",formData);
   if(!formData.username || !formData.password || !formData.email){
     alert("请填写完整用户名、密码和邮箱")
     return
@@ -181,6 +184,7 @@ const registerSubmit = async ()=>{
   }else{
     alert("注册失败")
   }
+  // console.log("register: ",authStore.isLogin, authStore.username, authStore.token,authStore.userId)
 }
 </script>
 
