@@ -9,6 +9,8 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
+  // base: '/dev/frontend/',
+  base: '/test/frontend/',
   plugins: [vue(), vueDevTools(), tailwindcss()],
   resolve: {
     alias: {
@@ -23,6 +25,9 @@ export default defineConfig({
     },
   },
   server: {
+    host: '0.0.0.0',
+    port: 5173,
     cors: true,
+    allowedHosts: ['jyuacm.icescoffee.com'],
   },
 });
