@@ -1,10 +1,10 @@
 import request from './index'
 
 
-export async function login(usename, password) {
+export async function login(username, password) {
      try {
           const res = await request.post('/api/v1/auth/login', {
-               username: usename,
+               username: username,
                password: password,
           })
           console.log("login: ", res.data)
