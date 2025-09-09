@@ -3,7 +3,7 @@ import request from './index'
 
 export async function login(username, password) {
      try {
-          const res = await request.post('/api/v1/auth/login', {
+          const res = await request.post('/v1/auth/login', {
                username: username,
                password: password,
           })
@@ -17,7 +17,7 @@ export async function login(username, password) {
 
 export async function register(username, password, email) {
      try {
-          const res = await request.post('/api/v1/auth/register', {
+          const res = await request.post('/v1/auth/register', {
                username: username,
                password: password,
                email: email
@@ -31,7 +31,7 @@ export async function register(username, password, email) {
 
 export async function resetPassword(code, email, new_password) {
      try {
-          const res = await request.post('/api/v1/auth/reset-password', {
+          const res = await request.post('/v1/auth/reset-password', {
                code: code,
                email: email,
                new_password: new_password

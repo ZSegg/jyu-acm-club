@@ -26,9 +26,9 @@ export default defineConfig({
     // cors: true,
     proxy: {
       "/api": {
-        target: `https://jyuacm.icescoffee.com/test`,
+        target: `https://jyuacm.icescoffee.com/`,
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ""),
+        rewrite: (path) => path.replace(/^\/api/, "/test/api"),
       },
     },
   },
